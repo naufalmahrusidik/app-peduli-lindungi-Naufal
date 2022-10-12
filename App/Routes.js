@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import {SplashScreen, LoginScreen, HomeScreen} from './Pages';
+import {SplashScreen, LoginScreen, HomeScreen, ImunizationScreen, EhacScreen, CovidTextScreen} from './Pages';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +19,25 @@ export default Router = () => {
         name="HomeScreen"
         component={HomeScreen}
         options={{ headerShown: false }} />
+      <Stack.Screen
+        name="ImunizationScreen"
+        component={ImunizationScreen}
+        options={{ 
+          title: "Vaccine and Immunization",
+          headerShown: true }} /> 
+      <Stack.Screen
+        name="EhacScreen"
+        component={EhacScreen}
+        options={{ 
+          title: "Ehac",
+          headerShown: true, 
+          headerTransparent: true }} />
+      <Stack.Screen
+        name="CovidTextScreen"
+        component={CovidTextScreen}
+        options={{
+          title: "COVID -19 Test Results",
+          headerShown: true, }} />
     </Stack.Navigator>
   );
 };
