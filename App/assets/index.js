@@ -17,6 +17,14 @@ import Icon_User from './img/user.jpeg';
 import Lonceng from './img/lonceng.jpeg';
 import Panah from './img/panah.jpeg';
 import QrCode from './img/qr_code.png';
+import Icon_Covid from './img/ic_covid.jpg';
+import Icon_CheckIn from './img/ic_check_in.jpg';
+import Icon_Child from './img/ic_child.jpg';
+import Backgrond from './img/bg_ehac.png';
+import Logo_CreateEhc from './img/ic_create_ehc.jpg';
+import Logo_MyEhc from './img/ic_my_ehc.jpg';
+import Icon_Email from './img/Icon-mail.png';
+import Icon_Empty from './img/ic_empty.jpg';
 
 export {
     IconSplash, 
@@ -38,4 +46,12 @@ export {
     Lonceng,
     Panah,
     QrCode,
+    Icon_Covid,
+    Icon_CheckIn,
+    Icon_Child,
+    Backgrond,
+    Logo_CreateEhc,
+    Logo_MyEhc,
+    Icon_Email,
+    Icon_Empty,
 };
