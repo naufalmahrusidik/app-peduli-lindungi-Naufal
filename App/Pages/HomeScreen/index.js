@@ -36,7 +36,7 @@ export default HomeScreen = ({ navigation }) => {
             <View style={styles.container}>
                 <Image source={Icon_User} style={styles.imgSize} />
                 <Text style={styles.hi}>Hi, </Text>
-                <Text style={styles.naufal}>Naufal Sidik</Text>
+                <Text style={styles.naufal}>Naufal Mahrus Sidik</Text>
                 <Image source={Lonceng} style={styles.imgSize2} />
             </View>
             <View>
@@ -77,7 +77,7 @@ export default HomeScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate("CovidTextScreen")}>
                         <Image source={Icon_CovidTestResult} style={styles.gambar2} />
                     </TouchableOpacity>
-                    <Text style={styles.tulisan}>Covid-19 Test      Results</Text>
+                    <Text style={styles.tulisan}>Covid-19 Test             Results</Text>
                 </View>
                 <View style={styles.column}>
                     <TouchableOpacity
@@ -91,7 +91,7 @@ export default HomeScreen = ({ navigation }) => {
                 <View style={styles.column}>
                     <TouchableOpacity
                         onPress={() =>
-                            Alert.alert("Peringatan!!!", "Halaman ini Belum Dibuat", [
+                            Alert.alert("Warning!!!", "Halaman ini Masih dalam pengembangan", [
                                 {
                                     text: "ok",
                                     onPress: () => console.log("ok ditekan"),
@@ -100,25 +100,45 @@ export default HomeScreen = ({ navigation }) => {
                         }>
                         <Image source={Icon_Travel} style={styles.gambar2} />
                     </TouchableOpacity>
-                    <Text style={styles.tulisan}>Travel            Regulations</Text>
+                    <Text style={styles.tulisan}>  Travel            Regulations</Text>
                 </View>
                 <View style={styles.column}>
-                    <Image source={Icon_Telemedicine} style={styles.gambar2} />
+                <TouchableOpacity
+                        onPress={() =>
+                            Alert.alert("Warning!!!", "Halaman ini Masih dalam pengembangan", [
+                                {
+                                    text: "ok",
+                                    onPress: () => console.log("ok ditekan"),
+                                },
+                            ])
+                        }>
+                        <Image source={Icon_Telemedicine} style={styles.gambar2} />
+                    </TouchableOpacity>
                     <Text style={styles.tulisan}>Telemedicine</Text>
                 </View>
                 <View style={styles.column}>
+                <TouchableOpacity
+                        onPress={() =>
+                            Alert.alert("Warning!!!", "Halaman ini Masih dalam pengembangan", [
+                                {
+                                    text: "ok",
+                                    onPress: () => console.log("ok ditekan"),
+                                },
+                            ])
+                        }>
                     <Image source={Icon_Healthcare} style={styles.gambar2} />
-                    <Text style={styles.tulisan}>Healthcare            Facility</Text>
+                    </TouchableOpacity>
+                    <Text style={styles.tulisan}>   Healthcare            Facility</Text>
                 </View>
             </View>
             <View style={styles.row1}>
                 <View style={styles.column}>
                     <Image source={Icon_StatisticCovid} style={styles.gambar2} />
-                    <Text style={styles.tulisan}>Covid-19             Statistic</Text>
+                    <Text style={styles.tulisan}>   Covid-19             Statistic</Text>
                 </View>
                 <View style={styles.column}>
                     <Image source={Icon_FindHospital} style={styles.gambar2} />
-                    <Text style={styles.tulisan}>Find Hospital             Bed</Text>
+                    <Text style={styles.tulisan}>  Find Hospital             Bed</Text>
                 </View>
                 <View style={styles.column}></View>
             </View>
